@@ -2,5 +2,4 @@ data-dumps/*.bak
 pgsql-browser/
 *.ndm2
 adventure-works-2014-dwh-loader/
-adventure-works-2014-extractor/
 
