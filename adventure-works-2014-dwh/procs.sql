@@ -108,3 +108,33 @@ as $BODY$
     end
 $BODY$
 ;
+
+create or replace procedure public.populate_dim_sales_territory(
+    alternate_key integer,
+    region character varying(100),
+    country character varying(100),
+    territory_group character varying(100),
+    territory_image bytea
+)
+language plpgsql
+as $BODY$
+    declare
+        territory_exists integer;
+    begin
+        select into territory_exists sales_territory_alternate_key
+        from public.dim_sales_territory
+        where sales_territory_alternate_key = alternate_key;
+        if (territory_exists is null) then
+            insert into public.dim_sales_territory (sales_territory_alternate_key,
+                                                    sales_territory_region,
+                                                    sales_territory_country,
+                                                    sales_territory_group,
+                                                    sales_territory_image) values (alternate_key,
+                                                                                   region,
+                                                                                   country,
+                                                                                   territory_group,
+                                                                                   territory_image);
+        end if;
+    end;
+$BODY$
+;

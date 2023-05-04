@@ -1,0 +1,28 @@
+{
+  "type": "record",
+  "name": "SalesTerritory",
+  "fields": [
+    {
+      "name": "alternate_key",
+      "type": "int"
+    },
+    {
+      "name": "region",
+      "type": "string"
+    },
+    {
+      "name": "country",
+      "type": "string"
+    },
+    {
+      "name": "territory_group",
+      "type": "string",
+      "default": null
+    },
+    {
+      "name": "territory_image",
+      "type": "bytes",
+      "default": null
+    }
+  ]
+}

@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:sqlserver://172.19.0.2;database=AdventureWorksDW2014</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="AdventureWorks2014@172.19.0.2" uuid="20589882-c96f-438c-82aa-4629a36c3518">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://172.19.0.2;database=AdventureWorks2014</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
