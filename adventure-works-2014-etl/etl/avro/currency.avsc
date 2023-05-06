@@ -1,0 +1,14 @@
+{
+  "type": "record",
+  "name": "DimCurrency",
+  "fields": [
+    {
+      "name": "alternate_key",
+      "type": "string"
+    },
+    {
+      "name": "currency_name",
+      "type": "string"
+    }
+  ]
+}

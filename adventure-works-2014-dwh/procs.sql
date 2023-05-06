@@ -138,3 +138,24 @@ as $BODY$
     end;
 $BODY$
 ;
+
+create or replace procedure public.populate_dim_currency(
+    alternate_key  char(6),
+    currency_name  varchar(100)
+)
+language plpgsql
+as $BODY$
+    declare
+        currency_exists char(6);
+    begin
+        select into currency_exists currency_alternate_key
+        from public.dim_currency
+        where currency_alternate_key = alternate_key;
+        if (currency_exists is null) then
+            insert into public.dim_currency (currency_alternate_key,
+                                             currency_name) values (alternate_key,
+                                                                    currency_name);
+        end if;
+    end;
+$BODY$
+;
