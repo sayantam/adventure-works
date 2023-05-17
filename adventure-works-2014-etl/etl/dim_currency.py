@@ -16,8 +16,8 @@ with DAG(
 
     @dag.task(task_id="read_dim_currency")
     def read_dim_currency():
-        mssql_hook = MsSqlHook(mssql_conn_id="adventure_works_mssql", schema="AdventureWorksDW2014")
-        records = mssql_hook.get_records(sql="select CurrencyAlternateKey, CurrencyName from dbo.DimCurrency")
+        mssql_hook = MsSqlHook(mssql_conn_id="adventure_works_mssql", schema="AdventureWorks2014")
+        records = mssql_hook.get_records(sql="select CurrencyCode, Name from Sales.Currency")
         from avro_adapter import open_avro_writer
         with open_avro_writer(identifier="currency") as writer:
             for record in records:
