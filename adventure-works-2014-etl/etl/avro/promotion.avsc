@@ -1,0 +1,66 @@
+{
+  "type": "record",
+  "name": "Promotion",
+  "fields": [
+    {
+      "name": "promotion_alternate_key",
+      "type": "int"
+    },
+    {
+      "name": "english_promotion_name",
+      "type": "string"
+    },
+    {
+      "name": "spanish_promotion_name",
+      "type": "string"
+    },
+    {
+      "name": "french_promotion_name",
+      "type": "string"
+    },
+    {
+      "name": "discount_pct",
+      "type": "float"
+    },
+    {
+      "name": "english_promotion_type",
+      "type": "string"
+    },
+    {
+      "name": "spanish_promotion_type",
+      "type": "string"
+    },
+    {
+      "name": "french_promotion_type",
+      "type": "string"
+    },
+    {
+      "name": "english_promotion_category",
+      "type": "string"
+    },
+    {
+      "name": "spanish_promotion_category",
+      "type": "string"
+    },
+    {
+      "name": "french_promotion_category",
+      "type": "string"
+    },
+    {
+      "name": "start_date",
+      "type": "float"
+    },
+    {
+      "name": "end_date",
+      "type": "float"
+    },
+    {
+      "name": "min_qty",
+      "type": "int"
+    },
+    {
+      "name": "max_qty",
+      "type": ["null", "int"]
+    }
+  ]
+}

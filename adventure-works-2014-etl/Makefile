@@ -1,9 +1,18 @@
 LOCAL_AIRFLOW_HOME := airflow
+LOCAL_AVRO_DIR := avro
+LOCAL_SQL_DIR := sql
+
+.phony: local_avro_dir
+local_avro_dir:
+	@mkdir -p $${HOME}/${LOCAL_AIRFLOW_HOME}/dags/${LOCAL_AVRO_DIR}
+
+.phony: local_sql_dir
+local_sql_dir:
+	@mkdir -p $${HOME}/${LOCAL_AIRFLOW_HOME}/dags/${LOCAL_SQL_DIR}
 
 .phony: dev_deploy
-dev_deploy:
-	set -ev
-	mkdir -p $${HOME}/${LOCAL_AIRFLOW_HOME}/dags/avro
-	cp etl/avro/*.avsc $${HOME}/${LOCAL_AIRFLOW_HOME}/dags/avro/
-	cp etl/*.py $${HOME}/${LOCAL_AIRFLOW_HOME}/dags/
-
+dev_deploy: local_avro_dir local_sql_dir
+	@set -ev
+	@cp etl/avro/*.avsc $${HOME}/${LOCAL_AIRFLOW_HOME}/dags/${LOCAL_AVRO_DIR}/
+	@cp etl/sql/*.sql $${HOME}/${LOCAL_AIRFLOW_HOME}/dags/${LOCAL_SQL_DIR}/
+	@cp etl/*.py $${HOME}/${LOCAL_AIRFLOW_HOME}/dags/
