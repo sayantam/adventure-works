@@ -1,17 +1,11 @@
 -- MS SQL
-select PromotionAlternateKey,
-       EnglishPromotionName,
-       SpanishPromotionName,
-       FrenchPromotionName,
+select SpecialOfferID,
+       Description,
        DiscountPct,
-       EnglishPromotionType,
-       SpanishPromotionType,
-       FrenchPromotionType,
-       EnglishPromotionCategory,
-       SpanishPromotionCategory,
-       FrenchPromotionCategory,
+       Type,
+       Category,
        StartDate,
        EndDate,
        MinQty,
        MaxQty
-from dbo.DimPromotion;
+from Sales.SpecialOffer;

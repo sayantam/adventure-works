@@ -1,0 +1,17 @@
+promotion_alternate_key,spanish_promotion_name,french_promotion_name,spanish_promotion_type,french_promotion_type,spanish_promotion_category,french_promotion_category
+1,Sin descuento,Aucune remise,No Discount,Sin descuento,Aucune remise,Sin descuento,Aucune remise
+2,Descuento por volumen (entre 11 y 14),Remise sur quantité (de 11 à 14),Descuento por volumen,Remise sur quantité,Reseller,Distribuidor,Revendeur
+3,Descuento por volumen (entre 15 y 24),Remise sur quantité (de 15 à 24),Descuento por volumen,Remise sur quantité,Reseller,Distribuidor,Revendeur
+4,Descuento por volumen (entre 25 y 40),Remise sur quantité (de 25 à 40),Descuento por volumen,Remise sur quantité,Reseller,Distribuidor,Revendeur
+5,Descuento por volumen (entre 41 y 60),Remise sur quantité (de 41 à 60),Descuento por volumen,Remise sur quantité,Reseller,Distribuidor,Revendeur
+6,Descuento por volumen (más de 60),Remise sur quantité (au-delà de 60),Descuento por volumen,Remise sur quantité,Reseller,Distribuidor,Revendeur
+7,"Liquidación de bicicleta de montaña, 100",Liquidation VTT 100,Descatalogado,Ce produit n'est plus commercialisé,Reseller,Distribuidor,Revendeur
+8,"Casco deportivo, descuento: 2002",Remise sur les casques sport - 2002,Descuento de temporada,Remise saisonnière,Reseller,Distribuidor,Revendeur
+9,"Bicicleta de carretera: 650, oferta especial",Déstockage Vélo de route 650,Inventario excedente,Déstockage,Reseller,Distribuidor,Revendeur
+10,Oferta de cubierta de montaña,Vente de pneus de VTT,Inventario excedente,Déstockage,Customer,Cliente,Client
+11,"Casco deportivo, descuento: 2003",Remise sur les casques sport - 2003,Descuento de temporada,Remise saisonnière,Reseller,Distribuidor,Revendeur
+12,Oferta de cuadro de carretera GB,Vente de cadres de vélo de route LL,Inventario excedente,Déstockage,Reseller,Distribuidor,Revendeur
+13,Promoción ‘Touring-3000’,Promotion “Touring-3000”,Producto Nuevo,Nouveau produit,Reseller,Distribuidor,Revendeur
+14,Promoción ‘Touring-1000’,Promotion “Touring-1000”,Producto Nuevo,Nouveau produit,Reseller,Distribuidor,Revendeur
+15,Venta de pedales a mitad de precio,Pédales à moitié prix,Descuento de temporada,Remise saisonnière,Customer,Cliente,Client
+16,"Liquidación de bicicleta de montaña, 500, plateada",Liquidation VTT 500 argent,Descatalogado,Ce produit n'est plus commercialisé,Reseller,Distribuidor,Revendeur
